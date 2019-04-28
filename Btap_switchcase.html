@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai tap cau lenh Switch...case</title>
+</head>
+<body>
+	<div style="text-align: center; margin-top: 2rem;">
+		<form method="get" accept-charset="utf-8">
+		<input type="text" id="inputMonth" holder="Từ tháng 1-12">
+		<input type="button" onclick="tinhSoNgay()" value="Tính số ngày">
+		<br>
+		<h3 id="demo"></h3>
+	</form>
+	</div>
+	
+
+	<script>
+		function tinhSoNgay() {
+			let month = document.getElementById('inputMonth').value;
+
+			month = parseInt(month);
+
+			switch (month) {
+				case 1:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 31 ngày';
+					break;
+				case 2:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 28 hoặc 29 ngày';
+					break;
+				case 3:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 31 ngày';
+					break;
+				case 4:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 30 ngày';
+					break;
+				case 5:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 31 ngày';
+					break;
+				case 6:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 30 ngày';
+					break;
+				case 7:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 31 ngày';
+					break;
+				case 8:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 31 ngày';
+					break;
+				case 9:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 30 ngày';
+					break;
+				case 10:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 31 ngày';
+					break;
+				case 11:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 30 ngày';
+					break;
+				case 12:
+					document.getElementById('demo').innerHTML = 'Tháng 1 có 31 ngày';
+					break;
+				default:
+					document.getElementById('demo').innerHTML = 'Làm gì có tháng này, nhập lại đi';
+			}
+		}
+	</script>
+</body>
+</html>
